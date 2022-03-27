@@ -1,9 +1,8 @@
-import 'dart:convert';
 
 class QuizItem{
   final String image;
   final String answer;
-  final var choice_list;
+  final List choice_list;
 
   QuizItem({
     required this.image,
@@ -26,7 +25,6 @@ class QuizItem{
 
   @override
   String toString() {
-  List<String>.from(json[choice_list]);
   return '$choice_list';
   }
 
